@@ -8,7 +8,7 @@ public class serverdemo
 	public static void main(String a[])
 	{
 		Server server;
-		server = new Server ("192.168.0.106", 8026, "/folder", ChatServerEndpoint.class);
+		server = new Server ("localhost", 8026, "/folder", ChatServerEndpoint.class);
 		try 
 		{
 			server.start();
@@ -18,8 +18,6 @@ public class serverdemo
 			
 			BufferedReader bufferRead = new BufferedReader(new InputStreamReader(System.in));
 			bufferRead.readLine();
-			
-			
 			
 		} catch (Exception e) {
 			e.printStackTrace();

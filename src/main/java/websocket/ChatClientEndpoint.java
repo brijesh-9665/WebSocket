@@ -62,8 +62,8 @@ class MyFrame1 extends JFrame
 		{
 			public void actionPerformed(ActionEvent e)
 			{
-				product p;
-				p=new product();
+				Product p;
+				p=new Product();
 				p.setPid(Integer.parseInt(t1.getText()));
 				p.setPname(t2.getText());
 				p.setPrice(Double.parseDouble(t3.getText()));	
@@ -101,7 +101,7 @@ class MyFrame1 extends JFrame
 		{
     		ChatClientEndpoint chatClientEndPoint=new ChatClientEndpoint();
     		chatClientEndPoint.addMessageListener(new MessageListener() {
-    			public void actionPerformed(product p)
+    			public void actionPerformed(Product p)
     			{
     				dtm.addRow(new Object[] { p.getPid(),p.getPname(),p.getPrice() });
     			}
@@ -121,7 +121,7 @@ class MyFrame1 extends JFrame
 
 interface MessageListener
 {
-	void actionPerformed(product p);
+	void actionPerformed(Product p);
 }
 
 
@@ -146,7 +146,7 @@ public class ChatClientEndpoint
     }
     
     @OnMessage
-    public void onMessage(product message, Session session) throws IOException, EncodeException
+    public void onMessage(Product message, Session session) throws IOException, EncodeException
     {
         if(this.listener!=null)
         {

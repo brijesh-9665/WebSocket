@@ -25,7 +25,7 @@ public class ChatServerEndpoint
 	 }
 	
 	 @OnMessage
-	 public void onMessage(product message, Session session) throws EncodeException
+	 public void onMessage(Product message, Session session) throws EncodeException
 	 {
 		 for (Session clientSession : session.getOpenSessions())
 		 {
@@ -43,17 +43,6 @@ public class ChatServerEndpoint
 				 }
 			 }    
 		 }
-		 /*if (message.equals("quit"))
-		 {
-			 try 
-			 {
-				 session.close(new CloseReason(CloseCodes.NORMAL_CLOSURE, "Bye!"));
-				 
-			 } catch (IOException e)
-			 {
-				 e.printStackTrace();
-			 }
-		 }*/
 	 }
 	
 	 @OnClose

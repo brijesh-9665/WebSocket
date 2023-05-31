@@ -4,13 +4,13 @@ import javax.websocket.Decoder;
 import javax.websocket.EndpointConfig;
 import javax.json.*;
 
-public class MessageDecoder implements Decoder.Text<product> 
+public class MessageDecoder implements Decoder.Text<Product> 
 {
 
 	@Override
-  	public product decode(String jsonMessage)
+  	public Product decode(String jsonMessage)
 	{
-		product message = new product();
+		Product message = new Product();
 	
 		try
 		{

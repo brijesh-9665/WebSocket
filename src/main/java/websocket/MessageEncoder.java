@@ -1,14 +1,13 @@
 package websocket;
 
 import javax.websocket.Encoder;
-
 import javax.json.*;
 
-public class MessageEncoder implements Encoder.Text<product>
+public class MessageEncoder implements Encoder.Text<Product>
 {
 
 	@Override
-	public String encode(product message)
+	public String encode(Product message)
 	{	  
 		JsonObject jsonObject = Json.createObjectBuilder()
 				.add("pid", message.getPid())

@@ -33,6 +33,7 @@
 	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
 		<attributes>
 			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="C:/Users/5490/Downloads/javax.json-1.1-javadoc.jar"/>

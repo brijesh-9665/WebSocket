@@ -1,6 +1,6 @@
 package websocket;
 
-public class product 
+public class Product 
 {
 	private int pid;
 	private String pname;
